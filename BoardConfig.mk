@@ -80,6 +80,15 @@ BOARD_SUPER_PARTITION_GROUPS := microsoft_dynamic_partitions
 BOARD_MICROSOFT_DYNAMIC_PARTITIONS_PARTITION_LIST := system system_ext product vendor odm
 BOARD_MICROSOFT_DYNAMIC_PARTITIONS_SIZE := 9122611200 # TODO: Fix hardcoded value
 
+# FSTAB
+include $(CLEAR_VARS)
+LOCAL_MODULE := recovery.fstab
+LOCAL_MODULE_TAGS := optional
+LOCAL_SRC_FILES := recovery.fstab
+LOCAL_MODULE_CLASS := ETC
+LOCAL_MODULE_PATH := $(TARGET_ROOT_OUT)
+include $(BUILD_PREBUILT)
+
 # Platform
 TARGET_BOARD_PLATFORM := msmnile
 
