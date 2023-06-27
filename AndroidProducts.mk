@@ -6,9 +6,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_duo.mk
+    $(LOCAL_DIR)/twrp_duo.mk
 
 COMMON_LUNCH_CHOICES := \
-    omni_duo-user \
-    omni_duo-userdebug \
-    omni_duo-eng
+    twrp_duo-user \
+    twrp_duo-userdebug \
+    twrp_duo-eng

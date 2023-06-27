@@ -9,14 +9,11 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Omni stuff.
-$(call inherit-product, vendor/omni/config/common.mk)
-
 # Inherit from duo device
 $(call inherit-product, device/microsoft/duo/device.mk)
 
 PRODUCT_DEVICE := duo
-PRODUCT_NAME := omni_duo
+PRODUCT_NAME := twrp_duo
 PRODUCT_BRAND := surface
 PRODUCT_MODEL := Surface Duo
 PRODUCT_MANUFACTURER := microsoft
